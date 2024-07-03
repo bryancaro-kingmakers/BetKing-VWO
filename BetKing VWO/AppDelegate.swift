@@ -6,14 +6,25 @@
 //
 
 import UIKit
+import VWO_Insights
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
+    private var rootCoordinator: BaseCoordinator?
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        VWOConfigure()
+        
+        let builder = ContainerBuilder {
+            RealSplashScreenStageContainer()
+        }
+        
+        rootCoordinator = RootCoordinator(containerBuilder: builder)
+        rootCoordinator?.start()
+        
         return true
     }
 
@@ -32,5 +43,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
 
+    private func VWOConfigure() {
+        let deviceId = UIDevice.current.identifierForVendor?.uuidString ?? ""
+        let userId = deviceId
+        
+        VWO.configure(
+            accountId: "742951",
+            appId: "3f1e4143c30b9be6c50667f91b8de813",
+            userId: userId
+        ) {  result in
+            switch result {
+            case .success(let response):
+                print("VWO Success: ", response)
+                VWO.startSessionRecording()
+            case .failure(let error):
+                print("VWO Error: ", error)
+            }
+        }
+    }
 }
 

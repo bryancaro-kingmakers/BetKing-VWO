@@ -13,9 +13,13 @@
 		11032A5D2C342C8800A400F8 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 11032A5C2C342C8800A400F8 /* Base */; };
 		11032A5F2C342C8A00A400F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11032A5E2C342C8A00A400F8 /* Assets.xcassets */; };
 		11032A622C342C8A00A400F8 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 11032A612C342C8A00A400F8 /* Base */; };
+		11F5BD9D2C342F4400B0FF9A /* VWO_Insights in Frameworks */ = {isa = PBXBuildFile; productRef = 11F5BD9C2C342F4400B0FF9A /* VWO_Insights */; };
+		11F5BD9F2C34310000B0FF9A /* Tool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F5BD9E2C34310000B0FF9A /* Tool.swift */; };
+		833BBBA8CFEE70560DA627B3 /* Pods_BetKing_VWO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDFDC0D68D14874682DFE6CC /* Pods_BetKing_VWO.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B74046B8E479A52F221DECD /* Pods-BetKing VWO.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BetKing VWO.release.xcconfig"; path = "Target Support Files/Pods-BetKing VWO/Pods-BetKing VWO.release.xcconfig"; sourceTree = "<group>"; };
 		11032A522C342C8800A400F8 /* BetKing VWO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BetKing VWO.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		11032A552C342C8800A400F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11032A572C342C8800A400F8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +28,9 @@
 		11032A5E2C342C8A00A400F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		11032A612C342C8A00A400F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		11032A632C342C8A00A400F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11F5BD9E2C34310000B0FF9A /* Tool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tool.swift; sourceTree = "<group>"; };
+		BF456356EEFF029AD229C1D8 /* Pods-BetKing VWO.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BetKing VWO.debug.xcconfig"; path = "Target Support Files/Pods-BetKing VWO/Pods-BetKing VWO.debug.xcconfig"; sourceTree = "<group>"; };
+		DDFDC0D68D14874682DFE6CC /* Pods_BetKing_VWO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BetKing_VWO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +38,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11F5BD9D2C342F4400B0FF9A /* VWO_Insights in Frameworks */,
+				833BBBA8CFEE70560DA627B3 /* Pods_BetKing_VWO.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +51,8 @@
 			children = (
 				11032A542C342C8800A400F8 /* BetKing VWO */,
 				11032A532C342C8800A400F8 /* Products */,
+				9B5B1206E6E9AF150FE28297 /* Pods */,
+				4D26FD6D5C1A27BCFEA7F0A9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +69,7 @@
 			children = (
 				11032A552C342C8800A400F8 /* AppDelegate.swift */,
 				11032A572C342C8800A400F8 /* SceneDelegate.swift */,
+				11F5BD9E2C34310000B0FF9A /* Tool.swift */,
 				11032A592C342C8800A400F8 /* ViewController.swift */,
 				11032A5B2C342C8800A400F8 /* Main.storyboard */,
 				11032A5E2C342C8A00A400F8 /* Assets.xcassets */,
@@ -67,6 +79,23 @@
 			path = "BetKing VWO";
 			sourceTree = "<group>";
 		};
+		4D26FD6D5C1A27BCFEA7F0A9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DDFDC0D68D14874682DFE6CC /* Pods_BetKing_VWO.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9B5B1206E6E9AF150FE28297 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BF456356EEFF029AD229C1D8 /* Pods-BetKing VWO.debug.xcconfig */,
+				0B74046B8E479A52F221DECD /* Pods-BetKing VWO.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,15 +103,20 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 11032A662C342C8A00A400F8 /* Build configuration list for PBXNativeTarget "BetKing VWO" */;
 			buildPhases = (
+				FFFB01E4434298AF4E5F022B /* [CP] Check Pods Manifest.lock */,
 				11032A4E2C342C8800A400F8 /* Sources */,
 				11032A4F2C342C8800A400F8 /* Frameworks */,
 				11032A502C342C8800A400F8 /* Resources */,
+				972B0198AD29B5733284E7AE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "BetKing VWO";
+			packageProductDependencies = (
+				11F5BD9C2C342F4400B0FF9A /* VWO_Insights */,
+			);
 			productName = "BetKing VWO";
 			productReference = 11032A522C342C8800A400F8 /* BetKing VWO.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +145,9 @@
 				Base,
 			);
 			mainGroup = 11032A492C342C8800A400F8;
+			packageReferences = (
+				11F5BD9B2C342F4400B0FF9A /* XCRemoteSwiftPackageReference "ios-mobile-insights-artifacts" */,
+			);
 			productRefGroup = 11032A532C342C8800A400F8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -133,6 +170,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		972B0198AD29B5733284E7AE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BetKing VWO/Pods-BetKing VWO-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BetKing VWO/Pods-BetKing VWO-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BetKing VWO/Pods-BetKing VWO-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FFFB01E4434298AF4E5F022B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BetKing VWO-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		11032A4E2C342C8800A400F8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -141,6 +220,7 @@
 				11032A5A2C342C8800A400F8 /* ViewController.swift in Sources */,
 				11032A562C342C8800A400F8 /* AppDelegate.swift in Sources */,
 				11032A582C342C8800A400F8 /* SceneDelegate.swift in Sources */,
+				11F5BD9F2C34310000B0FF9A /* Tool.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,11 +367,13 @@
 		};
 		11032A672C342C8A00A400F8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF456356EEFF029AD229C1D8 /* Pods-BetKing VWO.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "BetKing VWO/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -314,11 +396,13 @@
 		};
 		11032A682C342C8A00A400F8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B74046B8E479A52F221DECD /* Pods-BetKing VWO.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "BetKing VWO/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -361,6 +445,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		11F5BD9B2C342F4400B0FF9A /* XCRemoteSwiftPackageReference "ios-mobile-insights-artifacts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/wingify/ios-mobile-insights-artifacts.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.4.11;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		11F5BD9C2C342F4400B0FF9A /* VWO_Insights */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 11F5BD9B2C342F4400B0FF9A /* XCRemoteSwiftPackageReference "ios-mobile-insights-artifacts" */;
+			productName = VWO_Insights;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 11032A4A2C342C8800A400F8 /* Project object */;
 }
