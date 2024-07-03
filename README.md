@@ -96,7 +96,7 @@ The app crashes after 2-3 minutes of interaction such as scrolling, opening wind
 
 ### Steps to Reproduce
 1.  ```sh
-     Run the app on an iOS device or simulator.
+     Run the app on an iOS real device or simulator.
     ```
 
 2. ```sh
@@ -104,7 +104,7 @@ The app crashes after 2-3 minutes of interaction such as scrolling, opening wind
     ```
     
 3. ```sh
-    Observe that the app crashes after approximately 2-3 minutes.
+    Observe that the app crashes after approximately 2-6 minutes.
     ```
 
 
